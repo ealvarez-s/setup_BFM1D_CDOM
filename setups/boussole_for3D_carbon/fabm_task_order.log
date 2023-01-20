@@ -1,0 +1,72 @@
+prepare_inputs
+  possible task orders:
+  - do, do_surface, do_column
+  - do_surface, do, do_column
+  - do, do_surface, do_column, do
+  - do_surface, do, do_column, do
+  best task order (3 tasks): do, do_surface, do_column
+get_bottom_sources
+  possible task orders:
+  - do_bottom
+  best task order (1 tasks): do_bottom
+get_surface_sources
+  possible task orders:
+  - do_surface
+  best task order (1 tasks): do_surface
+get_interior_sources
+  possible task orders:
+  - do
+  best task order (1 tasks): do
+finalize_outputs
+  possible task orders:
+  - do, do_surface
+  - do_surface, do
+  best task order (2 tasks): do, do_surface
+get_drag
+  possible task orders:
+  - do_surface
+  best task order (1 tasks): do_surface
+get_albedo
+  possible task orders:
+  - do_surface
+  best task order (1 tasks): do_surface
+get_light_extinction
+  possible task orders:
+  - do
+  best task order (1 tasks): do
+check_surface_state
+  possible task orders:
+  - do_surface
+  best task order (1 tasks): do_surface
+check_bottom_state
+  possible task orders:
+  - do_bottom
+  best task order (1 tasks): do_bottom
+check_interior_state
+  possible task orders:
+  - do
+  best task order (1 tasks): do
+initialize_surface_state
+  possible task orders:
+  - do_surface
+  best task order (1 tasks): do_surface
+initialize_bottom_state
+  possible task orders:
+  - do_bottom
+  best task order (1 tasks): do_bottom
+initialize_interior_state
+  possible task orders:
+  - do
+  best task order (1 tasks): do
+get_vertical_movement
+  possible task orders:
+  - do
+  best task order (1 tasks): do
+get_horizontal_conserved_quantities
+  possible task orders:
+  - do_horizontal
+  best task order (1 tasks): do_horizontal
+get_interior_conserved_quantities
+  possible task orders:
+  - do
+  best task order (1 tasks): do

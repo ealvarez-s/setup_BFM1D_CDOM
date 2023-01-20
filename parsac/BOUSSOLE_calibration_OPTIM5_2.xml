@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../client/config.xsd">
+  <transports>
+    <transport type="sqlite" path="/g100_scratch/userexternal/ealvarez/BOUSSOLE_CALIBRATION/boussole_annual_DE30_OPTM5_2.db"/>
+  </transports>
+  <executable path="gotm" shell="True"/>
+  <setup path="../setups/boussole_for3D_carbon" exclude_files="" exclude_dirs=""/>
+  <parameters>
+    <parameter file="fabm.yaml" variable="instances/PelChem/parameters/p_bX3c" minimum="0.0011" maximum="0.0079" />
+    <parameter file="fabm.yaml" variable="instances/PelChem/parameters/p_IX3" minimum="7.0" maximum="58.0" />
+<!-- <parameter file="fabm.yaml" variable="instances/PelChem/parameters/p_rX3c" minimum="1.0e-06" maximum="5.0e-05" /> -->
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/SdomX1" minimum="0.0145" maximum="0.0198" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/SdomX2" minimum="0.0143" maximum="0.0196" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/SdomX3" minimum="0.0166" maximum="0.0192" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_epsP1" minimum="0.0103" maximum="0.0157" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_epsP2" minimum="0.0174" maximum="0.0391" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_epsP3" minimum="0.0270" maximum="0.0446" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_epsP4" minimum="0.0120" maximum="0.0244" />
+    <parameter file="fabm.yaml" variable="instances/P1/parameters/p_qlcPPY" minimum="0.0164" maximum="0.0284" />
+    <parameter file="fabm.yaml" variable="instances/P2/parameters/p_qlcPPY" minimum="0.0373" maximum="0.0448" />
+    <parameter file="fabm.yaml" variable="instances/P3/parameters/p_qlcPPY" minimum="0.0117" maximum="0.0173" />
+    <parameter file="fabm.yaml" variable="instances/P4/parameters/p_qlcPPY" minimum="0.0110" maximum="0.0287" />
+    <parameter file="fabm.yaml" variable="instances/P1/parameters/p_quantum_yield" minimum="0.000731" maximum="0.001178" />
+    <parameter file="fabm.yaml" variable="instances/P2/parameters/p_quantum_yield" minimum="0.000157" maximum="0.000259" />
+    <parameter file="fabm.yaml" variable="instances/P3/parameters/p_quantum_yield" minimum="0.000769" maximum="0.000994" />
+    <parameter file="fabm.yaml" variable="instances/P4/parameters/p_quantum_yield" minimum="0.000171" maximum="0.000416" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_bpsP1" minimum="0.00168" maximum="0.0190" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_bpsP2" minimum="0.00162" maximum="0.0190" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_bpsP3" minimum="0.00189" maximum="0.0190" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/p_bpsP4" minimum="0.00298" maximum="0.0192" />
+    <parameter file="fabm.yaml" variable="instances/P1/parameters/p_fX2p" minimum="0.015" maximum="0.095" />
+    <parameter file="fabm.yaml" variable="instances/P2/parameters/p_fX2p" minimum="0.017" maximum="0.095" />
+    <parameter file="fabm.yaml" variable="instances/P3/parameters/p_fX2p" minimum="0.019" maximum="0.095" />
+    <parameter file="fabm.yaml" variable="instances/P4/parameters/p_fX2p" minimum="0.013" maximum="0.092" />
+    <parameter file="fabm.yaml" variable="instances/B1/parameters/p_fX3b" minimum="0.015" maximum="0.095" />
+    <parameter file="fabm.yaml" variable="instances/Z5/parameters/p_fX1z" minimum="0.014" maximum="0.089" />
+    <parameter file="fabm.yaml" variable="instances/Z6/parameters/p_fX1z" minimum="0.018" maximum="0.096" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/aparcoeff" minimum="0.00038" maximum="0.00077" />
+    <parameter file="fabm.yaml" variable="instances/lightspectral/parameters/bparcoeff" minimum="0.0069" maximum="0.0196" />  
+  </parameters>
+  <observations>
+<!-- <variable source="../observations/clim/temp_monthly.obs" modelpath="result.nc" modelvariable="temp" spinupyears="0"/> -->
+<!-- <variable source="../observations/clim/salt_monthly.obs" modelpath="result.nc" modelvariable="salt" spinupyears="0"/> -->
+<!-- <variable source="../observations/clim/doxy_subsampled.obs" modelpath="result.nc" modelvariable="O2_o" spinupyears="2"/> -->
+<!-- <variable source="../observations/clim/N3n_monthly.obs" modelpath="result.nc" modelvariable="N3_n" spinupyears="2"/> -->
+<!-- <variable source="../observations/clim/N1p_monthly.obs" modelpath="result.nc" modelvariable="N1_p" spinupyears="2"/> -->
+<!-- <variable source="../observations/clim/N5s_monthly.obs" modelpath="result.nc" modelvariable="N5_s" spinupyears="2"/> -->
+    <variable source="../observations/date/PChla.obs" modelpath="result.nc" modelvariable="P3_Chl" spinupyears="2"/>
+    <variable source="../observations/date/NChla.obs" modelpath="result.nc" modelvariable="P2_Chl" spinupyears="2"/>
+    <variable source="../observations/date/MChla.obs" modelpath="result.nc" modelvariable="(P1_Chl+P4_Chl)" spinupyears="2"/>
+    <variable source="../observations/date/aph450.obs" modelpath="result.nc" modelvariable="lightspectral_aph450" spinupyears="2"/>
+    <variable source="../observations/date/anap450.obs" modelpath="result.nc" modelvariable="lightspectral_anap450" spinupyears="2"/>
+    <variable source="../observations/date/acdom450.obs" modelpath="result.nc" modelvariable="lightspectral_acdom450" spinupyears="2"/>
+    <variable source="../observations/date/Scdom.obs" modelpath="result.nc" modelvariable="lightspectral_Scdom350_500" spinupyears="2"/>
+<!-- <variable source="../observations/date_sat/kd490_obs_monthly.obs" modelpath="daily_inst.nc" modelvariable="lightspectral_kd500" format="timeseries" spinupyears="2"/> -->
+<!-- <variable source="../observations/date_sat/kd490_sat_monthly.obs" modelpath="daily_inst.nc" modelvariable="lightspectral_kd500" format="timeseries" spinupyears="2"/> -->
+<!-- <variable source="../observations/date_sat/r0_443_obs_monthly.obs" modelpath="daily_inst.nc" modelvariable="lightspectral_Rrs450" format="timeseries" spinupyears="2"/> -->
+<!-- <variable source="../observations/date_sat/r0_443_sat_monthly.obs" modelpath="daily_inst.nc" modelvariable="lightspectral_Rrs450" format="timeseries" spinupyears="2"/> -->
+    <variable source="../observations/date_sat/bbp442_obs_monthly.obs" modelpath="result.nc" modelvariable="lightspectral_bbp450[:,171]" format="timeseries" spinupyears="2"/>
+<!-- <variable source="../observations/date_sat/bbp550_obs_monthly.obs" modelpath="result.nc" modelvariable="lightspectral_bbp550[:,171]" format="timeseries" spinupyears="2"/> -->
+  </observations>
+  <extra_outputs>
+    <statistic name="correlation" expression="corrcoef(x,y)[0,1]"/>
+    <statistic name="rmse" expression="sqrt(mean((y-x)**2))"/>
+  </extra_outputs>
+</config>
