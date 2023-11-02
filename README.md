@@ -17,3 +17,5 @@ Observations at BOUSSOLE site in GOTM-profile (real date and climatologies) and 
 parsac/
 
 Files (.xml) to configure the optimization experiment done in ParSAC for (Álvarez et al. 2023), and example job script (slurm) to launch the calibration.
+
+https://doi.org/10.5281/zenodo.10067424
