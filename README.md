@@ -19,3 +19,5 @@ parsac/
 Files (.xml) to configure the optimization experiment done in ParSAC for (Álvarez et al. 2023), and example job script (slurm) to launch the calibration.
 
 https://doi.org/10.5281/zenodo.10067424
+
+<a href="https://zenodo.org/doi/10.5281/zenodo.10067423"><img src="https://zenodo.org/badge/591345659.svg" alt="DOI"></a>
